@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
 
+a {
+  text-decoration: none;
+}
+
 .header_wrapper .navbar {
   padding: 10px 0;
 }
@@ -188,7 +192,9 @@
 
 /* Portfolio */
 .portfolio {
-  padding-top: 70px;
+  padding-top: 50px;
+  overflow: hidden;
+  padding-bottom: 2px;
 }
 .portfolio h4 {
   font-family: "Montserrat", sans-serif;
@@ -197,13 +203,20 @@
 }
 
 .portfolio img {
-  height: 400px;
+  width: 416px;
+}
+
+@media (max-width: 576px) {
+  .portfolio img {
+    width: 350px;
+  }
 }
 
 /* Contact Us */
 .contact {
-  padding-top: 70px;
+  padding-top: 50px;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
 .contact h4 {
@@ -242,12 +255,41 @@
   font-size: 20px;
 }
 
+@media (max-width: 576px) {
+  .contact img {
+    width: 190px;
+    height: 140px;
+  }
+  .contact .text {
+    margin-left: -46px;
+  }
+
+  .contact h5 {
+    font-size: 9px;
+  }
+
+  .contact .whatsapp {
+    margin-top: -30px;
+  }
+
+  .contact .whatsapp img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contact .whatsapp span {
+    font-size: 9px;
+    padding-left: 2px;
+  }
+}
+
 /* Footer */
 .footer {
   margin-top: 70px;
   padding: 50px 0;
   border-top: 1px solid #ecd5b6;
   border-bottom: 1px solid #ecd5b6;
+  overflow: hidden;
 }
 .footer a.navbar-brand {
   font-family: "Pacifico", cursive;
@@ -280,4 +322,10 @@
 
 .copyright p a {
   font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .copyright p {
+    font-size: 14px;
+  }
 }
